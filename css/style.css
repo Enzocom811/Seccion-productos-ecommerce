@@ -1,0 +1,107 @@
+/* HEADER */
+header {
+  border: 2px solid rgb(231, 57, 57);
+}
+header nav {
+  background-color: lightcoral;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .logo {
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 100%;
+  margin: 25px 0 20px 20px;
+  display: flex;
+}
+header nav ul {
+  list-style: none;
+  margin-right: 25px;
+  display: flex;
+}
+header nav ul li {
+  margin-right: 15px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* FIN HEADER */
+/* HTML */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* FIN HTML */
+/* BODY */
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* MAIN */
+main {
+  background-color: lightblue;
+}
+main .box-container {
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+main .box-container .box {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2%;
+  padding: 5px;
+  margin: 30px 0;
+  display: inline-block;
+  text-align: center;
+}
+main .box-container .box .titulo-box {
+  text-align: center;
+  padding: 10px;
+}
+main .box-container .box img {
+  width: 75%;
+  border-radius: 5%;
+}
+main .box-container .box .parrafo-box {
+  padding: 5px;
+}
+main .box-container .box .precio-box {
+  padding: 10px;
+}
+main .box-container .box .boton-box {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: lightcoral;
+  border: 2px solid rgb(231, 57, 57);
+  /*     display: flex; */
+}
+footer .logosFooter-container {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+footer .logosFooter-container a {
+  padding: 15px;
+}
+footer .logosFooter-container a img {
+  width: 200%;
+}
+
+/* FIN FOOTER */
+/* IMG SIZE */
+img {
+  width: 100%;
+}
+
+/* FIN IMG SIZE */
+
+/*# sourceMappingURL=style.css.map */

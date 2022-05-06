@@ -1,0 +1,37 @@
+/* MAIN */
+
+main {
+    background-color: lightblue;
+    .box-container {
+        padding: 50px;
+        display: flex;
+        justify-content: space-around;
+        .box {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 2%;
+            padding: 5px;
+            margin:30px 0;
+            display: inline-block;
+            text-align: center;
+            
+            .titulo-box {
+                text-align:center ;
+                padding: 10px;
+            }img {
+                width: 75%;
+                border-radius: 5%;
+            }
+            .parrafo-box {
+                padding: 5px;
+            }
+            .precio-box {
+                padding: 10px;
+            }
+            .boton-box {
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
