@@ -1,6 +1,26 @@
+/* HTML */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* FIN HTML */
+/* BODY */
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+/* FIN BODY */
+/* IMG SIZE */
+img {
+  width: 100%;
+}
+
+/* FIN IMG SIZE */
 /* HEADER */
 header {
   border: 2px solid rgb(231, 57, 57);
+  border-radius: 2px;
 }
 header nav {
   background-color: lightcoral;
@@ -15,6 +35,9 @@ header nav .logo {
   margin: 15px 0 15px 15px;
   display: flex;
 }
+header nav h1 {
+  text-decoration: underline;
+}
 header nav ul {
   list-style: none;
   margin-right: 25px;
@@ -24,23 +47,11 @@ header nav ul li {
   margin-right: 15px;
 }
 header nav ul li a {
-  text-decoration: none;
+  text-decoration: underline;
   color: black;
 }
 
 /* FIN HEADER */
-/* HTML */
-* {
-  padding: 0;
-  margin: 0;
-}
-
-/* FIN HTML */
-/* BODY */
-body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-
 /* MAIN */
 main {
   background-color: lightblue;
@@ -53,7 +64,7 @@ main .box-container {
 main .box-container .box {
   background-color: white;
   border: 1px solid black;
-  border-radius: 2%;
+  border-radius: 1.5%;
   padding: 5px;
   margin: 30px 0;
   display: inline-block;
@@ -78,11 +89,12 @@ main .box-container .box .boton-box {
   margin-bottom: 10px;
 }
 
+/* FIN MAIN */
 /* FOOTER */
 footer {
   background-color: lightcoral;
   border: 2px solid rgb(231, 57, 57);
-  /*     display: flex; */
+  border-radius: 2px;
 }
 footer .logosFooter-container {
   padding: 5px;
@@ -97,11 +109,5 @@ footer .logosFooter-container a img {
 }
 
 /* FIN FOOTER */
-/* IMG SIZE */
-img {
-  width: 100%;
-}
-
-/* FIN IMG SIZE */
 
 /*# sourceMappingURL=style.css.map */
