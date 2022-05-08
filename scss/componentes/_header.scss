@@ -26,8 +26,14 @@ header {
             li {
                 margin-right: 15px;
                 a {
-                    text-decoration: underline;
+                    text-decoration: none;
                     color: black;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: #5f7f7a;
+                        transition: all 0.4s;
+                    }
                 }
             }
         }

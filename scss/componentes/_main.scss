@@ -3,34 +3,53 @@
 main {
     background-color: lightblue;
     .box-container {
-        padding: 60px;
+        padding: 61px;
         display: flex;
         justify-content: space-around;
+        
         .box {
+            width: 20%;
             background-color: white;
             border: 1px solid black;
             border-radius: 1.5%;
             padding: 5px;
             margin:30px 0;
-            display: inline-block;
+            display: flex;
+            flex-direction: column;
             text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             
             .titulo-box {
                 text-align:center ;
                 padding: 10px;
-            }img {
-                width: 75%;
-                border-radius: 5%;
             }
-            .parrafo-box {
-                padding: 5px;
+            .img-container {
+                display: flex;
+                justify-content: center;
+                img {
+                width: 75%;
+                border: 1px solid black;
+                border-radius: 5%;
+                display: flex;
+                justify-content: center;
+            }
+            }
+            .parrafoBox-container {
+                .parrafo-box {
+                margin-top: 5px;
+                padding: 3px;
+                
+                }
             }
             .precio-box {
                 padding: 10px;
             }
-            .boton-box {
+            .boton-container {
+                .boton-box {
                 padding: 10px;
                 margin-bottom: 10px;
+                width: 40%;
+            }
             }
         }
     }

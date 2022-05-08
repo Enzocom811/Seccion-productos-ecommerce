@@ -47,8 +47,13 @@ header nav ul li {
   margin-right: 15px;
 }
 header nav ul li a {
-  text-decoration: underline;
+  text-decoration: none;
   color: black;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: #5f7f7a;
+  transition: all 0.4s;
 }
 
 /* FIN HEADER */
@@ -57,36 +62,48 @@ main {
   background-color: lightblue;
 }
 main .box-container {
-  padding: 60px;
+  padding: 61px;
   display: flex;
   justify-content: space-around;
 }
 main .box-container .box {
+  width: 20%;
   background-color: white;
   border: 1px solid black;
   border-radius: 1.5%;
   padding: 5px;
   margin: 30px 0;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 main .box-container .box .titulo-box {
   text-align: center;
   padding: 10px;
 }
-main .box-container .box img {
-  width: 75%;
-  border-radius: 5%;
+main .box-container .box .img-container {
+  display: flex;
+  justify-content: center;
 }
-main .box-container .box .parrafo-box {
-  padding: 5px;
+main .box-container .box .img-container img {
+  width: 75%;
+  border: 1px solid black;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+}
+main .box-container .box .parrafoBox-container .parrafo-box {
+  margin-top: 5px;
+  padding: 3px;
 }
 main .box-container .box .precio-box {
   padding: 10px;
 }
-main .box-container .box .boton-box {
+main .box-container .box .boton-container .boton-box {
   padding: 10px;
   margin-bottom: 10px;
+  width: 40%;
 }
 
 /* FIN MAIN */
@@ -97,15 +114,15 @@ footer {
   border-radius: 2px;
 }
 footer .logosFooter-container {
-  padding: 5px;
+  padding: 20px;
   display: flex;
   justify-content: flex-start;
 }
 footer .logosFooter-container a {
-  padding: 15px;
+  padding: 5px;
 }
 footer .logosFooter-container a img {
-  width: 200%;
+  width: 125%;
 }
 
 /* FIN FOOTER */
