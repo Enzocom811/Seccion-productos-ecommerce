@@ -29,10 +29,10 @@ header nav {
   align-items: center;
 }
 header nav .logo {
-  width: 70%;
+  width: 35%;
   border: 1px solid black;
   border-radius: 100%;
-  margin: 15px 0 15px 15px;
+  margin: 5px 0 5px 5px;
   display: flex;
 }
 header nav h1 {
@@ -44,7 +44,7 @@ header nav ul {
   display: flex;
 }
 header nav ul li {
-  margin-right: 15px;
+  margin-right: 25px;
 }
 header nav ul li a {
   text-decoration: none;
@@ -57,56 +57,12 @@ header nav ul li a:hover {
 }
 
 /* FIN HEADER */
-/* MAIN */
-main {
+/* INICIO */
+.inicio-container {
+  height: 725px;
   background-color: lightblue;
 }
-main .box-container {
-  padding: 61px;
-  display: flex;
-  justify-content: space-around;
-}
-main .box-container .box {
-  width: 20%;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 1.5%;
-  padding: 5px;
-  margin: 30px 0;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-main .box-container .box .titulo-box {
-  text-align: center;
-  padding: 10px;
-}
-main .box-container .box .img-container {
-  display: flex;
-  justify-content: center;
-}
-main .box-container .box .img-container img {
-  width: 75%;
-  border: 1px solid black;
-  border-radius: 5%;
-  display: flex;
-  justify-content: center;
-}
-main .box-container .box .parrafoBox-container .parrafo-box {
-  margin-top: 5px;
-  padding: 3px;
-}
-main .box-container .box .precio-box {
-  padding: 10px;
-}
-main .box-container .box .boton-container .boton-box {
-  padding: 10px;
-  margin-bottom: 10px;
-  width: 40%;
-}
 
-/* FIN MAIN */
 /* FOOTER */
 footer {
   background-color: lightcoral;
@@ -126,5 +82,80 @@ footer .logosFooter-container a img {
 }
 
 /* FIN FOOTER */
+/* MAIN */
+.productos-container {
+  height: 725px;
+  background-color: lightblue;
+  display: flex;
+}
+.productos-container .box-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.productos-container .box-container .box {
+  width: 20%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 1.5%;
+  padding: 5px;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.productos-container .box-container .box .titulo-box {
+  text-align: center;
+  padding: 10px;
+}
+.productos-container .box-container .box .img-container {
+  display: flex;
+  justify-content: center;
+}
+.productos-container .box-container .box .img-container img {
+  width: 75%;
+  border: 1px solid black;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+}
+.productos-container .box-container .box .parrafoBox-container .parrafo-box {
+  margin-top: 5px;
+  padding: 3px;
+}
+.productos-container .box-container .box .precio-box {
+  padding: 10px;
+}
+.productos-container .box-container .box .boton-container .boton-box {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 40%;
+}
+
+/* FIN MAIN */
+/* ENVIOS */
+.envios-container {
+  height: 725px;
+  background-color: lightblue;
+}
+
+/* PREGUNTAS */
+.preguntas-container {
+  height: 725px;
+  background-color: lightblue;
+}
+
+/* ENVIOS */
+.envios-container {
+  height: 725px;
+  background-color: lightblue;
+}
+
+/* MI CUENTA */
+.cuenta-container {
+  height: 725px;
+  background-color: lightblue;
+}
 
 /*# sourceMappingURL=style.css.map */
