@@ -84,19 +84,24 @@ footer div p {
 
 /* FIN FOOTER */
 /* MAIN */
-.productos-container {
+main .titulo-productos {
+  background-color: #F3E9DD;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+main .productos-container {
   background-color: #F3E9DD;
   display: flex;
 }
-.productos-container .box-container {
+main .productos-container .box-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.productos-container .box-container .box {
-  width: 20%;
+main .productos-container .box-container .box {
+  width: 15%;
   background-color: #FDF6EC;
-  border: 1px solid black;
   border-radius: 1%;
   margin: 15px;
   display: flex;
@@ -104,36 +109,38 @@ footer div p {
   text-align: center;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.productos-container .box-container .box .titulo-box {
-  text-align: center;
-  padding: 20px;
+main .productos-container .box-container .box:hover {
+  transform: scale(1.025);
+  transition: all 0.3s;
 }
-.productos-container .box-container .box .img-container {
+main .productos-container .box-container .box .titulo-box {
+  text-align: start;
+  padding: 5px;
+}
+main .productos-container .box-container .box .img-container {
   display: flex;
   justify-content: center;
 }
-.productos-container .box-container .box .img-container img {
+main .productos-container .box-container .box .img-container img {
   width: 100%;
-  /* border: 1px solid black; */
-  /* border-radius: 2%; */
   display: flex;
   justify-content: center;
 }
-.productos-container .box-container .box .parrafoBox-container {
-  padding: 15px;
+main .productos-container .box-container .box .parrafoBox-container {
+  margin-left: 5px;
 }
-.productos-container .box-container .box .parrafoBox-container .parrafo-box {
-  margin-top: 5px;
+main .productos-container .box-container .box .parrafoBox-container .parrafo-box {
+  text-align: start;
 }
-.productos-container .box-container .box .precio-box {
-  padding: 10px;
+main .productos-container .box-container .box .precio-box {
+  padding: 5px;
   font-weight: bold;
   font-size: 20px;
 }
-.productos-container .box-container .box .boton-container {
-  padding: 2px;
+main .productos-container .box-container .box .boton-container {
+  /* padding: 2px; */
 }
-.productos-container .box-container .box .boton-container .boton-box {
+main .productos-container .box-container .box .boton-container .boton-box {
   border-radius: 2%;
   margin-top: 15px;
   padding: 10px;
@@ -141,8 +148,7 @@ footer div p {
   font-weight: bold;
   background-color: #B7CADB;
   width: 100%;
-  border: 1.5px solid black;
-  /* border-top: 2px solid black; */
+  border: none;
 }
 
 /* FIN MAIN */
