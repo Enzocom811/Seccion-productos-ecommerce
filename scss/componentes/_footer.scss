@@ -1,18 +1,14 @@
 /* FOOTER */
-
+@import "../base/variables";
 footer {
-    background-color: lightcoral;
-    border: 2px solid rgb(231, 57, 57);
-    border-radius: 2px;
-    .logosFooter-container {
-        padding: 20px;
+    background-color: #DAB88B;
+    div {
+        padding: 50px;
         display: flex;
-        justify-content: flex-start;
-        a {
-            padding: 5px;
-            img {
-                width: 125%;
-            }
+        justify-content: center;
+        align-items: center;
+        p {
+            margin: 0;
         }
     }
 }

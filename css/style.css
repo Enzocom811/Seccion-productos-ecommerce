@@ -7,7 +7,7 @@
 /* FIN HTML */
 /* BODY */
 body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* FIN BODY */
@@ -18,21 +18,16 @@ img {
 
 /* FIN IMG SIZE */
 /* HEADER */
-header {
-  border: 2px solid rgb(231, 57, 57);
-  border-radius: 2px;
-}
 header nav {
-  background-color: lightcoral;
+  padding: 10px;
+  background-color: #DAB88B;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 header nav .logo {
-  width: 35%;
-  border: 1px solid black;
-  border-radius: 100%;
-  margin: 5px 0 5px 5px;
+  width: 40%;
+  margin: 5px 0 5px 15px;
   display: flex;
 }
 header nav h1 {
@@ -41,6 +36,7 @@ header nav h1 {
 header nav ul {
   list-style: none;
   margin-right: 25px;
+  margin-bottom: 0;
   display: flex;
 }
 header nav ul li {
@@ -49,43 +45,78 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
+  font-size: 17px;
 }
 header nav ul li a:hover {
   text-decoration: underline;
-  color: #5f7f7a;
-  transition: all 0.4s;
+  color: #F3E9DD;
+  transition: all 0.2s;
 }
 
 /* FIN HEADER */
 /* INICIO */
-.inicio-container {
-  height: 725px;
-  background-color: lightblue;
+main .inicio-container {
+  background-color: #F3E9DD;
+}
+main .difProd-container {
+  margin-top: 30px;
+  display: flex;
+}
+main .difProd-container .dif-prod {
+  width: 20%;
+}
+main .info-container {
+  background-color: #F3E9DD;
+  padding: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+main .info-container .datos-container .tit-container p {
+  font-weight: bold;
+}
+main .info-container .datos-container .datos .num p {
+  margin: 0;
+}
+main .info-container .horarios-container .tit-container p {
+  font-weight: bold;
+}
+main .info-container .horarios-container .horarios .dias p {
+  margin: 0;
+}
+main .info-container .redes-container .tit-container p {
+  font-weight: bold;
+}
+main .info-container .redes-container .logos-container {
+  display: flex;
+  justify-content: space-around;
+}
+main .info-container .redes-container .logos-container .ig a img {
+  width: 100%;
+}
+main .info-container .redes-container .logos-container .fb a img {
+  width: 100%;
 }
 
 /* FOOTER */
 footer {
-  background-color: lightcoral;
-  border: 2px solid rgb(231, 57, 57);
-  border-radius: 2px;
+  background-color: #DAB88B;
 }
-footer .logosFooter-container {
-  padding: 20px;
+footer div {
+  padding: 50px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
-footer .logosFooter-container a {
-  padding: 5px;
-}
-footer .logosFooter-container a img {
-  width: 125%;
+footer div p {
+  margin: 0;
 }
 
 /* FIN FOOTER */
 /* MAIN */
 .productos-container {
   height: 725px;
-  background-color: lightblue;
+  background-color: #F3E9DD;
   display: flex;
 }
 .productos-container .box-container {
@@ -95,10 +126,10 @@ footer .logosFooter-container a img {
 }
 .productos-container .box-container .box {
   width: 20%;
-  background-color: white;
+  background-color: #FDF6EC;
   border: 1px solid black;
-  border-radius: 1.5%;
-  padding: 5px;
+  border-radius: 1%;
+  /* padding: 5px; */
   margin: 15px 0;
   display: flex;
   flex-direction: column;
@@ -116,7 +147,7 @@ footer .logosFooter-container a img {
 .productos-container .box-container .box .img-container img {
   width: 75%;
   border: 1px solid black;
-  border-radius: 5%;
+  border-radius: 2%;
   display: flex;
   justify-content: center;
 }
@@ -126,11 +157,22 @@ footer .logosFooter-container a img {
 }
 .productos-container .box-container .box .precio-box {
   padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.productos-container .box-container .box .boton-container {
+  padding: 2px;
 }
 .productos-container .box-container .box .boton-container .boton-box {
+  border-radius: 2%;
+  margin-top: 15px;
   padding: 10px;
-  margin-bottom: 10px;
-  width: 40%;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #B7CADB;
+  width: 100%;
+  border: 1.5px solid black;
+  /* border-top: 2px solid black; */
 }
 
 /* FIN MAIN */

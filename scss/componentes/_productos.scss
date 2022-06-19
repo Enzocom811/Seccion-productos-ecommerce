@@ -1,8 +1,9 @@
 /* MAIN */
+@import "../base/variables";
 
 .productos-container {
     height: 725px;
-    background-color: lightblue;
+    background-color: $bg-color;
     display: flex;
     .box-container {
         display: flex;
@@ -11,10 +12,10 @@
         
         .box {
             width: 20%;
-            background-color: white;
+            background-color: $card-color;
             border: 1px solid black;
-            border-radius: 1.5%;
-            padding: 5px;
+            border-radius: 1%;
+            /* padding: 5px; */
             margin:15px 0;
             display: flex;
             flex-direction: column;
@@ -31,7 +32,7 @@
                 img {
                 width: 75%;
                 border: 1px solid black;
-                border-radius: 5%;
+                border-radius: 2%;
                 display: flex;
                 justify-content: center;
             }
@@ -45,12 +46,21 @@
             }
             .precio-box {
                 padding: 10px;
+                font-weight: bold;
+                font-size: 20px;
             }
             .boton-container {
+                padding: 2px;
                 .boton-box {
+                border-radius: 2%;
+                margin-top: 15px;
                 padding: 10px;
-                margin-bottom: 10px;
-                width: 40%;
+                font-size: 18px;
+                font-weight: bold;
+                background-color: $bg-boton;
+                width: 100%;
+                border: 1.5px solid black;
+                /* border-top: 2px solid black; */
             }
             }
         }

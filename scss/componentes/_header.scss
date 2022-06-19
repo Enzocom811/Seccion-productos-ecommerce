@@ -1,18 +1,15 @@
 /* HEADER */
-
+@import "../base/variables";
 header {
-    border: 2px solid rgb(231, 57, 57);
-    border-radius: 2px;
     nav {
-        background-color: lightcoral;
+        padding: 10px;
+        background-color: $prime-color;
         display: flex;
         justify-content: space-between;
         align-items: center;
         .logo {
-            width: 35%;
-            border: 1px solid black;
-            border-radius: 100%;
-            margin:5px 0 5px 5px;
+            width: 40%;
+            margin: 5px 0 5px 15px;
             display: flex;
         }
         h1 {
@@ -22,17 +19,20 @@ header {
         ul {
             list-style: none;
             margin-right: 25px;
+            margin-bottom: 0;
             display: flex;
             li {
                 margin-right: 25px;
                 a {
                     text-decoration: none;
                     color: black;
+                    font-weight: bold;
+                    font-size: 17px;
 
                     &:hover {
                         text-decoration: underline;
-                        color: #5f7f7a;
-                        transition: all 0.4s;
+                        color: $bg-color;
+                        transition: all 0.2s;
                     }
                 }
             }

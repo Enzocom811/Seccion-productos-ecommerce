@@ -1,6 +1,82 @@
 /* INICIO */
+@import "../base/variables";
 
-.inicio-container {
-    height: 725px;
-    background-color: lightblue;
+main {
+    .inicio-container {
+        background-color: $bg-color;
+    }
+
+    .difProd-container {
+        margin-top: 30px;
+        display: flex;
+        .dif-prod {
+            width: 20%;
+        }
+    }
+
+    .info-container {
+        background-color: #F3E9DD;
+        padding: 150px;
+        display: flex;
+        justify-content: space-around;
+        .datos-container {
+            .tit-container {
+                p {
+                    font-weight: bold;
+                }
+            }
+            
+            .datos {
+                .num {
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .horarios-container {
+            .tit-container {
+                p {
+                    font-weight: bold;
+                }
+            }
+
+            .horarios {
+                .dias {
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .redes-container {
+            .tit-container {
+                p {
+                    font-weight: bold;
+                }
+            }
+
+            .logos-container {
+                display: flex;
+                justify-content: space-around;
+                .ig {
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .fb {
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
