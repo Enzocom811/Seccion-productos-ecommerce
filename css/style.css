@@ -66,37 +66,6 @@ main .difProd-container {
 main .difProd-container .dif-prod {
   width: 20%;
 }
-main .info-container {
-  background-color: #F3E9DD;
-  padding: 150px;
-  display: flex;
-  justify-content: space-around;
-}
-main .info-container .datos-container .tit-container p {
-  font-weight: bold;
-}
-main .info-container .datos-container .datos .num p {
-  margin: 0;
-}
-main .info-container .horarios-container .tit-container p {
-  font-weight: bold;
-}
-main .info-container .horarios-container .horarios .dias p {
-  margin: 0;
-}
-main .info-container .redes-container .tit-container p {
-  font-weight: bold;
-}
-main .info-container .redes-container .logos-container {
-  display: flex;
-  justify-content: space-around;
-}
-main .info-container .redes-container .logos-container .ig a img {
-  width: 100%;
-}
-main .info-container .redes-container .logos-container .fb a img {
-  width: 100%;
-}
 
 /* FOOTER */
 footer {
@@ -109,19 +78,19 @@ footer div {
   align-items: center;
 }
 footer div p {
+  font-weight: bold;
   margin: 0;
 }
 
 /* FIN FOOTER */
 /* MAIN */
 .productos-container {
-  height: 725px;
   background-color: #F3E9DD;
   display: flex;
 }
 .productos-container .box-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .productos-container .box-container .box {
@@ -129,31 +98,32 @@ footer div p {
   background-color: #FDF6EC;
   border: 1px solid black;
   border-radius: 1%;
-  /* padding: 5px; */
-  margin: 15px 0;
+  margin: 15px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .productos-container .box-container .box .titulo-box {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 .productos-container .box-container .box .img-container {
   display: flex;
   justify-content: center;
 }
 .productos-container .box-container .box .img-container img {
-  width: 75%;
-  border: 1px solid black;
-  border-radius: 2%;
+  width: 100%;
+  /* border: 1px solid black; */
+  /* border-radius: 2%; */
   display: flex;
   justify-content: center;
 }
+.productos-container .box-container .box .parrafoBox-container {
+  padding: 15px;
+}
 .productos-container .box-container .box .parrafoBox-container .parrafo-box {
   margin-top: 5px;
-  padding: 3px;
 }
 .productos-container .box-container .box .precio-box {
   padding: 10px;
@@ -176,28 +146,55 @@ footer div p {
 }
 
 /* FIN MAIN */
-/* ENVIOS */
-.envios-container {
-  height: 725px;
-  background-color: lightblue;
-}
-
 /* PREGUNTAS */
 .preguntas-container {
   height: 725px;
-  background-color: lightblue;
-}
-
-/* ENVIOS */
-.envios-container {
-  height: 725px;
-  background-color: lightblue;
+  background-color: #F3E9DD;
 }
 
 /* MI CUENTA */
-.cuenta-container {
+.contacto-container {
   height: 725px;
-  background-color: lightblue;
+  background-color: #F3E9DD;
+}
+
+.info-container {
+  background-color: #B7CADB;
+  padding: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+.info-container .datos-container .tit-container p {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.info-container .datos-container .datos ul {
+  list-style: none;
+  padding: 0;
+}
+.info-container .horarios-container .tit-container p {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.info-container .horarios-container .horarios ul {
+  list-style: none;
+  padding: 0;
+}
+.info-container .redes-container .tit-container p {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.info-container .redes-container .logos-container {
+  display: flex;
+  justify-content: space-around;
+}
+.info-container .redes-container .logos-container ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.info-container .redes-container .logos-container ul li {
+  margin: 0 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

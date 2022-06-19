@@ -1,0 +1,59 @@
+.info-container {
+    background-color: $bg-boton;
+    padding: 150px;
+    display: flex;
+    justify-content: space-around;
+    .datos-container {
+        .tit-container {
+            p {
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        .datos {
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+        }
+    }
+
+    .horarios-container {
+        .tit-container {
+            p {
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .horarios {
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+        }
+    }
+
+    .redes-container {
+        .tit-container {
+            p {
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+        }
+
+        .logos-container {
+            display: flex;
+            justify-content: space-around;
+            ul {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                li {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}

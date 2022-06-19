@@ -2,46 +2,42 @@
 @import "../base/variables";
 
 .productos-container {
-    height: 725px;
     background-color: $bg-color;
     display: flex;
     .box-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        
         .box {
             width: 20%;
             background-color: $card-color;
             border: 1px solid black;
             border-radius: 1%;
-            /* padding: 5px; */
-            margin:15px 0;
+            margin: 15px;
             display: flex;
             flex-direction: column;
             text-align: center;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             
             .titulo-box {
                 text-align:center ;
-                padding: 10px;
+                padding: 20px;
             }
             .img-container {
                 display: flex;
                 justify-content: center;
                 img {
-                width: 75%;
-                border: 1px solid black;
-                border-radius: 2%;
+                width: 100%;
+                /* border: 1px solid black; */
+                /* border-radius: 2%; */
                 display: flex;
                 justify-content: center;
             }
             }
             .parrafoBox-container {
+                padding: 15px;
                 .parrafo-box {
                 margin-top: 5px;
-                padding: 3px;
-                
                 }
             }
             .precio-box {
