@@ -1,5 +1,6 @@
 /* MAIN */
 @import "../base/variables";
+
 main {
     .titulo-productos {
         background-color: $bg-color;
@@ -11,6 +12,7 @@ main {
     background-color: $bg-color;
     display: flex;
     .box-container {
+        margin: 20px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,7 +56,6 @@ main {
                 font-size: 20px;
             }
             .boton-container {
-                /* padding: 2px; */
                 .boton-box {
                 border-radius: 2%;
                 margin-top: 15px;
@@ -66,7 +67,29 @@ main {
                 border: none;
             }
             }
+            @media screen and (max-width: 576px) and (max-height: 915px) {
+                width: 90%;
+            }
+            @media screen and (min-width: 576px) and (max-width: 730px) {
+                width: 75%;
+            }
+            @media screen and (min-width: 731px) and (max-width: 1200px) {
+                width: 25%;
+                margin: 5px;
+            }
         }
+    @media screen and (max-width: 576px) and (max-height: 915px) {
+    flex-direction: column;
+    }
+    @media screen and (min-width: 577px) and (max-width: 730px) {
+    flex-direction: column;
+    }
+    @media screen and (min-width: 576px) and (max-width: 1200px) {
+        justify-content: space-between;
+    }
+    }
+@media screen and (min-width: 576px) and (max-width: 730px) {
+    justify-content: center;
     }
 }
 }
