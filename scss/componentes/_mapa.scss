@@ -1,0 +1,11 @@
+@import "../base/variables";
+
+.mapa-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: $bg-color;
+    iframe {
+
+    }
+}

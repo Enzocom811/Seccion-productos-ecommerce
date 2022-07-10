@@ -1,6 +1,45 @@
-/* MI CUENTA */
+.titulo-formCont {
+    h1 {
+        padding: 30px;
+    }
+}
 
-.contacto-container {
-    height: 725px;
-    background-color: $bg-color;
+form {
+    margin:0 auto;
+    width:400px;
+
+    label {
+        display:block;
+        margin-top:20px;
+        letter-spacing:1px;
+    }
+
+    input, textarea {
+        width:380px;
+        height:27px;
+        background: $card-color;
+        border:2px solid $prime-color;
+        padding:10px;
+        margin-top:5px;
+        font-size:10px;
+        color:#ffffff;
+    }
+
+    textarea {
+        height:150px;
+    }
+
+    div {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        #submit {
+        width:85px;
+        height:35px;
+        border:none;
+        background-color: $prime-color;
+        margin-top:20px;
+        cursor:pointer;
+        }
+    }
 }

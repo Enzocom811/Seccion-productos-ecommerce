@@ -1,0 +1,48 @@
+main {
+    background-color: $bg-color;
+    .contacto-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .titulo-form {
+            h1 {
+                
+            }
+        }
+
+        .formulario {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            .componentes-form {
+                .nom-form {
+                    padding: 5px;
+                    .nom {
+                        padding: 10px;
+                    }
+                }
+
+                .mail-form {
+                    padding: 5px;
+                    .mail {
+                        padding: 10px;
+                    }
+                }
+
+                .text-form {
+                    padding: 5px;
+                }
+
+                .boton-formCont {
+                    padding: 5px;
+                    display: flex;
+                    justify-content: center;
+                    .boton-form {
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

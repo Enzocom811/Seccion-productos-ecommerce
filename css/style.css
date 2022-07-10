@@ -233,10 +233,44 @@ main .productos-container .box-container .box .boton-container .boton-box {
   background-color: #F3E9DD;
 }
 
-/* MI CUENTA */
-.contacto-container {
-  height: 725px;
-  background-color: #F3E9DD;
+.titulo-formCont h1 {
+  padding: 30px;
+}
+
+form {
+  margin: 0 auto;
+  width: 400px;
+}
+form label {
+  display: block;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+form input, form textarea {
+  width: 380px;
+  height: 27px;
+  background: #FDF6EC;
+  border: 2px solid #DAB88B;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 10px;
+  color: #ffffff;
+}
+form textarea {
+  height: 150px;
+}
+form div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+form div #submit {
+  width: 85px;
+  height: 35px;
+  border: none;
+  background-color: #DAB88B;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 section .info-container {
@@ -283,6 +317,51 @@ section .info-container .redes-container .logos-container ul li {
     justify-content: space-between;
     padding: 100px;
   }
+}
+
+main {
+  background-color: #F3E9DD;
+}
+main .contacto-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .contacto-container .formulario {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+main .contacto-container .formulario .componentes-form .nom-form {
+  padding: 5px;
+}
+main .contacto-container .formulario .componentes-form .nom-form .nom {
+  padding: 10px;
+}
+main .contacto-container .formulario .componentes-form .mail-form {
+  padding: 5px;
+}
+main .contacto-container .formulario .componentes-form .mail-form .mail {
+  padding: 10px;
+}
+main .contacto-container .formulario .componentes-form .text-form {
+  padding: 5px;
+}
+main .contacto-container .formulario .componentes-form .boton-formCont {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+main .contacto-container .formulario .componentes-form .boton-formCont .boton-form {
+  padding: 10px;
+}
+
+.mapa-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  background-color: #F3E9DD;
 }
 
 /*# sourceMappingURL=style.css.map */

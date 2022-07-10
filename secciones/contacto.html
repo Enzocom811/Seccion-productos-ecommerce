@@ -16,7 +16,7 @@
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./preguntas.html">Preguntas Frecuentes</a></li>
+                <li><a href="./preguntas.html">FAQ</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
@@ -24,11 +24,26 @@
 
     <main>
         <section class="contacto-container">
+            <div class="titulo-formCont">
+                <h1>FORMULARIO DE CONTACTO</h1>
+            </div>
 
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" name="nombre" placeholder="Nombre completo">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="ejemplo@email.com">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea>
+                <div>
+                    <input id="submit" name="submit" type="submit" value="Enviar">
+                </div>
+                
+            </form>
         </section>
     </main>
 
-    <footer>
+    <section>
         <section class="info-container">
             <div class="datos-container">
                 <div class="tit-container">
@@ -64,7 +79,9 @@
                 </div>
             </div>
         </section>
+    </section>
 
+    <footer>
         <div>
                     <p>2022 © Todos los derechos reservados</p>
         </div>
