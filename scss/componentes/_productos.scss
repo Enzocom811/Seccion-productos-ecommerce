@@ -3,6 +3,65 @@
 
 main {
     .titulo-productos {
+        text-align: center;
+        h2 {
+            padding: 20px;
+        }
+    }
+
+    .container {
+        .row {
+            .col-xs-12 {
+                .box {
+            background-color: $card-color;
+            border-radius: 1%;
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            
+            &:hover {
+                transform: scale(1.025);
+                transition: all 0.3s;
+            }
+                    .img-container {
+                        img {
+
+                        }
+                    }
+
+                    .titulo-box {
+                        text-align: center;
+                        padding: 5px;
+                    }
+
+                    .precio-box {
+                        padding: 5px;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+
+                    .boton-container {
+                        .boton-box {
+                            border-radius: 2%;
+                            margin-top: 5px;
+                            padding: 10px;
+                            font-size: 18px;
+                            font-weight: bold;
+                            background-color: $bg-boton;
+                            width: 100%;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* main {
+    .titulo-productos {
         background-color: $bg-color;
         padding: 10px;
         display: flex;
@@ -92,7 +151,7 @@ main {
     justify-content: center;
     }
 }
-}
+} */
 
 
 /* FIN MAIN */
