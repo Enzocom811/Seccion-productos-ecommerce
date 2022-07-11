@@ -62,5 +62,9 @@ section {
         justify-content: space-between;
         padding: 100px;
     }
+    @media screen and (max-width: 576px) and (max-height: 915px) {
+        flex-direction: column;
+        padding: 55px;
+    }
 }
 }

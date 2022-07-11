@@ -11,6 +11,10 @@ main {
         display: flex;
         .dif-prod {
             width: 20%;
+
+            @media screen and (max-width: 576px) and (max-height: 915px) {
+                width: 30%;
+            }
         }
     }
 }

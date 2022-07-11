@@ -2,6 +2,7 @@
 @import "../base/variables";
 
 main {
+    background-color: $bg-color;
     .titulo-productos {
         text-align: center;
         h2 {
