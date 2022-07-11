@@ -11,7 +11,6 @@ form {
     label {
         display:block;
         margin-top:20px;
-        letter-spacing:1px;
     }
 
     input, textarea {
@@ -21,8 +20,8 @@ form {
         border:2px solid $prime-color;
         padding:10px;
         margin-top:5px;
-        font-size:10px;
-        color:#ffffff;
+        font-size:15px;
+        color:black;
     }
 
     textarea {

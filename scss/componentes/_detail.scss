@@ -1,0 +1,50 @@
+main {
+    .contenedor {
+        display: flex;
+        justify-content: center;
+        .detail-container {
+            width: 60%;
+            display: flex;
+            background-color: $card-color;
+            margin: 20px;
+            .img-detailCont {
+                width: 60%;
+                .img-detail {
+
+                }
+            }
+
+            .info-detailCont {
+                width: 40%;
+                .detail-tit {
+                    display: flex;
+                    justify-content: center;
+                    padding: 20px;
+                    h1 {
+                    padding: 15px;
+                    }
+                }
+
+                .descripcion-det {
+                    margin-left: 10px;
+                    font-size: 20px;
+                }
+
+                .boton-detail {
+                    display: flex;
+                    justify-content: center;
+                    input {
+                        border-radius: 2%;
+                            margin-top: 5px;
+                            padding: 10px;
+                            font-size: 18px;
+                            font-weight: bold;
+                            background-color: $bg-boton;
+                            width: 60%;
+                            border: none;
+                    }
+                }
+            }
+        }
+    } 
+}

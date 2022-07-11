@@ -57,7 +57,7 @@ header nav ul li a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 20px;
 }
 header nav ul li a:hover {
   text-decoration: underline;
@@ -274,7 +274,6 @@ form {
 form label {
   display: block;
   margin-top: 20px;
-  letter-spacing: 1px;
 }
 form input, form textarea {
   width: 380px;
@@ -283,8 +282,8 @@ form input, form textarea {
   border: 2px solid #DAB88B;
   padding: 10px;
   margin-top: 5px;
-  font-size: 10px;
-  color: #ffffff;
+  font-size: 15px;
+  color: black;
 }
 form textarea {
   height: 150px;
@@ -392,6 +391,48 @@ main .contacto-container .formulario .componentes-form .boton-formCont .boton-fo
   justify-content: center;
   padding: 30px;
   background-color: #F3E9DD;
+}
+main .contenedor {
+  display: flex;
+  justify-content: center;
+}
+main .contenedor .detail-container {
+  width: 60%;
+  display: flex;
+  background-color: #FDF6EC;
+  margin: 20px;
+}
+main .contenedor .detail-container .img-detailCont {
+  width: 60%;
+}
+main .contenedor .detail-container .info-detailCont {
+  width: 40%;
+}
+main .contenedor .detail-container .info-detailCont .detail-tit {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+main .contenedor .detail-container .info-detailCont .detail-tit h1 {
+  padding: 15px;
+}
+main .contenedor .detail-container .info-detailCont .descripcion-det {
+  margin-left: 10px;
+  font-size: 20px;
+}
+main .contenedor .detail-container .info-detailCont .boton-detail {
+  display: flex;
+  justify-content: center;
+}
+main .contenedor .detail-container .info-detailCont .boton-detail input {
+  border-radius: 2%;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #B7CADB;
+  width: 60%;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
