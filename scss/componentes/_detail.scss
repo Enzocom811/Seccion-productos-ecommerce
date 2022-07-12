@@ -8,14 +8,14 @@ main {
             background-color: $card-color;
             margin: 20px;
             .img-detailCont {
-                width: 60%;
+                width: 50%;
                 .img-detail {
-
+                    width: 50%;
                 }
             }
 
             .info-detailCont {
-                width: 40%;
+                width: 50%;
                 .detail-tit {
                     display: flex;
                     justify-content: center;
