@@ -4,6 +4,39 @@
 main {
     .inicio-container {
         background-color: $bg-color;
+        .difProd-container {
+            padding: 30px 0;
+            display: flex;
+            .dif-prod {
+                width: 20%;
+    
+                &:hover {
+                    transform: scale(1.005);
+                    transition: all 0.3s;
+                }
+    
+                img {
+                    width: 100%;
+                }
+                @media screen and (max-width: 576px){
+                    width: 80%;
+                    margin: 10px 0;
+                    
+                }
+                @media screen and (min-width: 576px) and (max-width: 773px){
+                    width: 65%;
+                    margin: 10px 0;
+                    }
+            }
+            @media screen and (max-width: 576px){
+                flex-direction: column;
+                align-items: center;
+            }
+            @media screen and (min-width: 576px) and (max-width: 773px){
+                flex-direction: column;
+                align-items: center;
+                }
+        }
     }
 
     .difProd-container {
@@ -11,12 +44,19 @@ main {
         display: flex;
         .dif-prod {
             width: 20%;
+
+            &:hover {
+                transform: scale(1.005);
+                transition: all 0.3s;
+            }
+
             img {
                 width: 100%;
             }
             @media screen and (max-width: 576px){
                 width: 80%;
                 margin: 10px 0;
+                
             }
             @media screen and (min-width: 576px) and (max-width: 773px){
                 width: 65%;
@@ -33,3 +73,5 @@ main {
             }
     }
 }
+
+/* FIN INICIO */
