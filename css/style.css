@@ -31,7 +31,7 @@ header nav {
   align-items: center;
 }
 header nav a .logo {
-  width: 30%;
+  width: 20%;
   margin: 5px 0 5px 10px;
   display: flex;
 }
@@ -42,7 +42,7 @@ header nav a .logo {
 }
 @media screen and (min-width: 577px) and (max-width: 700px) {
   header nav a .logo {
-    width: 50%;
+    width: 45%;
   }
 }
 @media screen and (max-width: 576px) {
