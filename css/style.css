@@ -4,10 +4,15 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* FIN HTML */
 /* BODY */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F3E9DD;
 }
 
 /* FIN BODY */
@@ -27,15 +32,20 @@ header nav {
 }
 header nav a .logo {
   width: 30%;
-  margin: 5px 0 5px 15px;
+  margin: 5px 0 5px 10px;
   display: flex;
 }
-@media screen and (max-width: 576px) and (max-height: 915px) {
+@media screen and (max-width: 576px) {
   header nav a .logo {
     margin: 0;
   }
 }
-@media screen and (max-width: 576px) and (max-height: 915px) {
+@media screen and (min-width: 577px) and (max-width: 700px) {
+  header nav a .logo {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
   header nav a {
     display: flex;
     justify-content: center;
@@ -74,23 +84,23 @@ header nav ul li a:hover {
     font-size: 19px;
   }
 }
-@media screen and (max-width: 576px) and (max-height: 915px) {
+@media screen and (max-width: 576px) {
   header nav ul li {
     margin: 10px;
   }
 }
-@media screen and (max-width: 576px) and (max-height: 915px) {
+@media screen and (max-width: 576px) {
   header nav ul {
     padding: 0;
     margin: 0;
   }
 }
-@media screen and (min-width: 576px) and (max-width: 1200px) {
+@media screen and (min-width: 576px) {
   header nav {
     justify-content: space-around;
   }
 }
-@media screen and (max-width: 576px) and (max-height: 915px) {
+@media screen and (max-width: 576px) {
   header nav {
     flex-direction: column;
   }
@@ -117,7 +127,19 @@ main .difProd-container .dif-prod img {
     margin: 10px 0;
   }
 }
+@media screen and (min-width: 576px) and (max-width: 773px) {
+  main .difProd-container .dif-prod {
+    width: 65%;
+    margin: 10px 0;
+  }
+}
 @media screen and (max-width: 576px) {
+  main .difProd-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 773px) {
   main .difProd-container {
     flex-direction: column;
     align-items: center;
@@ -150,7 +172,10 @@ main {
   background-color: #F3E9DD;
 }
 main .titulo-productos {
+  border: 2.5px solid #DAB88B;
+  background-color: #FDF6EC;
   text-align: center;
+  margin: 20px;
 }
 main .titulo-productos h2 {
   padding: 20px;
@@ -282,20 +307,51 @@ main .container .row .col-xs-12 .box .boton-container .boton-box {
 } */
 /* FIN MAIN */
 /* PREGUNTAS */
-.preguntas-container {
-  height: 725px;
+main .preguntas-container {
   background-color: #F3E9DD;
+  padding: 30px;
+}
+main .preguntas-container .tit-preg h1 {
+  margin: 30px 0;
+}
+@media screen and (max-width: 576px) {
+  main .preguntas-container .tit-preg h1 {
+    text-align: center;
+  }
+}
+main .preguntas-container .preg {
+  margin: 50px 0;
+}
+@media screen and (max-width: 576px) {
+  main .preguntas-container .preg h3 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  main .preguntas-container .preg p {
+    text-align: center;
+  }
+}
+main .preguntas-container .preg ul {
+  margin-top: 15px;
+}
+@media screen and (max-width: 576px) {
+  main .preguntas-container .preg ul {
+    text-align: center;
+  }
 }
 
-.titulo-formCont {
+.contacto-container {
+  margin: 30px 0;
+}
+.contacto-container .titulo-formCont {
   display: flex;
   justify-content: center;
 }
-.titulo-formCont h2 {
+.contacto-container .titulo-formCont h2 {
   padding: 10px;
 }
-
-form {
+.contacto-container form {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -303,29 +359,28 @@ form {
   margin: 0 auto;
   width: 100%;
 }
-form label {
+.contacto-container form label {
   display: block;
   margin-top: 20px;
 }
-form input, form textarea {
+.contacto-container form input, .contacto-container form textarea {
   width: 350px;
-  height: 27px;
   background: #FDF6EC;
-  border: 2px solid #DAB88B;
+  border: 3px solid #DAB88B;
   padding: 10px;
   margin-top: 5px;
   font-size: 15px;
   color: black;
 }
-form textarea {
+.contacto-container form textarea {
   height: 150px;
 }
-form div {
+.contacto-container form div {
   margin-bottom: 30px;
 }
-form div #submit {
+.contacto-container form div #submit {
   width: 85px;
-  height: 35px;
+  height: 45px;
   border: none;
   background-color: #DAB88B;
   margin-top: 20px;
@@ -371,7 +426,7 @@ section .info-container .redes-container .logos-container ul {
 section .info-container .redes-container .logos-container ul li {
   margin: 0 5px;
 }
-@media screen and (max-width: 773px) and (max-height: 915px) {
+@media screen and (max-width: 773px) {
   section .info-container {
     flex-direction: column;
     padding: 55px;
@@ -395,10 +450,16 @@ main .contenedor .detail-container {
   margin: 20px;
 }
 main .contenedor .detail-container .img-detailCont {
-  width: 60%;
+  width: 100%;
+}
+main .contenedor .detail-container .img-detailCont .img-detail {
+  width: 100%;
 }
 main .contenedor .detail-container .info-detailCont {
-  width: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 main .contenedor .detail-container .info-detailCont .detail-tit {
   display: flex;
@@ -409,10 +470,19 @@ main .contenedor .detail-container .info-detailCont .detail-tit h1 {
   padding: 15px;
 }
 main .contenedor .detail-container .info-detailCont .descripcion-det {
-  margin-left: 10px;
+  /* margin-left: 10px; */
+  text-align: center;
   font-size: 20px;
 }
+main .contenedor .detail-container .info-detailCont .descripcion-det .precio {
+  font-size: 35px;
+  margin: 20px;
+}
+main .contenedor .detail-container .info-detailCont .descripcion-det .medios-pago img {
+  width: 10%;
+}
 main .contenedor .detail-container .info-detailCont .boton-detail {
+  margin: 20px;
   display: flex;
   justify-content: center;
 }
@@ -425,6 +495,23 @@ main .contenedor .detail-container .info-detailCont .boton-detail input {
   background-color: #B7CADB;
   width: 60%;
   border: none;
+}
+@media screen and (max-width: 576px) {
+  main .contenedor .detail-container {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 968px) {
+  main .contenedor .detail-container {
+    flex-direction: column;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 969px) and (max-width: 1453px) {
+  main .contenedor .detail-container {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

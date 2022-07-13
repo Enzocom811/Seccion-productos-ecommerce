@@ -4,8 +4,10 @@
 main {
     background-color: $bg-color;
     .titulo-productos {
-        background-color: $prime-color;
+        border: 2.5px solid $prime-color;
+        background-color: $card-color;
         text-align: center;
+        margin: 20px;
         h2 {
             padding: 20px;
         }

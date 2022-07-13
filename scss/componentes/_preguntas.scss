@@ -1,6 +1,40 @@
 /* PREGUNTAS */
 
-.preguntas-container {
-    height: 725px;
+main {
+    .preguntas-container {
     background-color: $bg-color;
+    padding: 30px;
+        .tit-preg {
+            h1 {
+                margin: 30px 0;
+
+            @media screen and (max-width: 576px){
+                text-align: center;
+            }
+            }
+        }
+
+        .preg {
+            margin: 50px 0;
+            h3 {
+            @media screen and (max-width: 576px){
+            text-align: center;
+            }
+            }
+
+            p {
+            @media screen and (max-width: 576px){
+                text-align: center;
+            }
+            }
+            
+            ul {
+                margin-top: 15px;
+
+            @media screen and (max-width: 576px){
+                text-align: center;
+            }
+            }
+        }
+    }
 }

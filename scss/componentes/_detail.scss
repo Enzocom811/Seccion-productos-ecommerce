@@ -8,14 +8,17 @@ main {
             background-color: $card-color;
             margin: 20px;
             .img-detailCont {
-                width: 50%;
+                width: 100%;
                 .img-detail {
-                    width: 50%;
+                    width: 100%;
                 }
             }
 
             .info-detailCont {
-                width: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
                 .detail-tit {
                     display: flex;
                     justify-content: center;
@@ -26,11 +29,23 @@ main {
                 }
 
                 .descripcion-det {
-                    margin-left: 10px;
+                    /* margin-left: 10px; */
+                    text-align: center;
                     font-size: 20px;
+                    .precio {
+                        font-size: 35px;
+                        margin: 20px;
+                    }
+
+                    .medios-pago {
+                        img {
+                            width: 10%;
+                        }
+                    }
                 }
 
                 .boton-detail {
+                    margin: 20px;
                     display: flex;
                     justify-content: center;
                     input {
@@ -44,6 +59,17 @@ main {
                             border: none;
                     }
                 }
+            }
+        @media screen and (max-width: 576px){
+            flex-direction: column;
+            width: 90%;
+            }
+        @media screen and (min-width: 577px) and (max-width: 968px){
+            flex-direction: column;
+            width: 60%;
+            }
+        @media screen and (min-width: 969px) and (max-width: 1453px){
+            width: 90%;
             }
         }
     } 
