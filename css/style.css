@@ -265,11 +265,6 @@ main .preguntas-container .preg {
 main .preguntas-container .preg ul {
   margin-top: 15px;
 }
-@media screen and (max-width: 576px) {
-  main .preguntas-container .preg ul {
-    text-align: center;
-  }
-}
 
 /* FIN PREGUNTAS */
 /* CONTACTO */
