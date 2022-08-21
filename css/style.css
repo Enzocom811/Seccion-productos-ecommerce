@@ -49,7 +49,6 @@ header nav a .logo {
   header nav a {
     display: flex;
     justify-content: center;
-    display: none;
   }
 }
 header nav h1 {
