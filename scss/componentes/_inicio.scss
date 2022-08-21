@@ -2,6 +2,15 @@
 @import "../base/variables";
 
 main {
+    .ids {
+        padding: 10px;
+        #contador, #paragraph {
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+        }
+    }
+
     .inicio-container {
         background-color: $bg-color;
         .difProd-container {

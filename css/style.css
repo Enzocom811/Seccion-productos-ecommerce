@@ -49,6 +49,7 @@ header nav a .logo {
   header nav a {
     display: flex;
     justify-content: center;
+    display: none;
   }
 }
 header nav h1 {
@@ -108,6 +109,14 @@ header nav ul li a:hover {
 
 /* FIN HEADER */
 /* INICIO */
+main .ids {
+  padding: 10px;
+}
+main .ids #contador, main .ids #paragraph {
+  font-weight: 500;
+  font-size: 30px;
+  text-align: center;
+}
 main .inicio-container {
   background-color: #F3E9DD;
 }
